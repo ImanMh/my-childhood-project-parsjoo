@@ -1,0 +1,23 @@
+<div class="result">
+    {{#each docs}}
+        <div class="result-inner">
+            <h2 class="title">
+                {{title}}
+            </h2>
+
+            {{#if url}}
+                <p class="url">
+                    {{url}}
+                </p>
+            {{else}}
+                <p class="url">
+                    {{host}}
+                </p>
+            {{/if}}
+
+            <p class="summary">
+                {{summary}}
+            </p>
+        </div>
+    {{/each}}
+</div>

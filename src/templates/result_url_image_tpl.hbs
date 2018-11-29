@@ -1,0 +1,21 @@
+<div class="result">
+    {{#each docs}}
+        <div class="result-inner">
+            <h2 class="title">
+                <a href="{{url}}" target="_blank">{{title}}</a>
+            </h2>
+            <div class="thumb-large">
+                {{#if image}}
+                    <img src="{{image}}"/>
+                {{/if}}
+            </div>
+            <p class="url">
+                {{url}}
+            </p>
+
+            <p class="summary">
+                {{summary}}
+            </p>
+        </div>
+    {{/each}}
+</div>

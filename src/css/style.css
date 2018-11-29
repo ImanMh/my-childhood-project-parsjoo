@@ -1,0 +1,292 @@
+@font-face{
+    font-family: 'Koodak';
+    src:    url('../../assets/fonts/font-koodak/Koodak.eot?#') format('eot'),
+    url('../../assets/fonts/font-koodak/Koodak.woff') format('woff'),
+    url('../../assets/fonts/font-koodak/Koodak.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'roboto-light';
+    src:   /* url('../../assets/fonts/Roboto-Light.eot?#') format('eot'),*/
+    /*url('../../assets/fonts/Roboto-Light.woff') format('woff'),*/
+    url('../../assets/fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*  Sticky footer conventions   */
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.main-wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+}
+.footer, .push {
+    height: 4em;
+    clear: both;
+}
+
+/*  my styles  */
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url("../../assets/bright_squares.png") repeat scroll transparent;
+}
+#header #small-logo {
+    float: right;
+    margin-top: 12px;
+    margin-right: 30px;
+    display: none;
+}
+#search-wrapper {
+    padding-top: 30px;
+}
+#search-wrapper.collapsed {
+    background-color: #fff;
+    border-bottom: 1px solid #aaa;
+}
+#search-wrapper.collapsed > div {
+    height: 80px;
+}
+#search-wrapper > div {
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+#search-wrapper #logo {
+    text-align: center;
+    font-size: 30px;
+    font-family: Tahoma, Arial, sans-serif;
+    direction: rtl;
+    color: #444;
+    margin-bottom: 30px;
+}
+#search-input {
+    border: 1px solid #aaa;
+    border-left: 0;
+    padding: 0 10px;
+    text-align: right;
+    direction: rtl;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    box-shadow: 0 0 3px #aaa;
+    height: 40px;
+    width: 597px;
+    float: right;
+    box-sizing: border-box;
+}
+#search-button {
+    border: 1px solid #aaa;
+    border-right: 0;
+    height: 40px;
+    background-color: #4D4D8E;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    position: absolute;
+    left: -3px;
+    box-shadow: 0 0 3px #aaa;
+}
+#search-button:hover {
+    color: #444;
+    background-color: #f5f5f5;
+}
+#intro {
+    padding-top: 60px;
+}
+#intro h2 {
+    font-family: roboto-light,verdana, arial, sans-serif;
+    text-align: center;
+    color: #444;
+}
+#intro #thumbs {
+    text-align: center;
+}
+#intro .thumb {
+    display: inline-block;
+    margin: 30px 20px 0 20px;
+}
+#intro .thumb img {
+    width: 150px;
+    display: block;
+}
+#intro .thumb .caption {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #ccc;
+    margin-top: 10px;
+    background-color: #444;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    font-family: roboto-light,verdana, arial, sans-serif;
+}
+#content {
+    text-align: right;
+    display: none;
+    background-color: #fff;
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-top: none;
+    direction: rtl;
+    padding-bottom: 50px;
+    border-radius: 0 0 3px 3px;
+    position: relative;
+}
+#content .result {
+    width: 100%;
+    padding: 20px;
+}
+#content .result-inner {
+    /*width: 700px;*/
+    margin-left: 60px;
+    margin-bottom: 40px;
+    display: table;
+}
+#content .result .thumb,
+#content .result .thumb-large {
+    display: inline-block;
+    float: right;
+}
+#content .result .thumb img {
+    width: 100px;
+}
+#content .result .thumb-large img {
+    width: 200px;
+}
+#content .result .title {
+    font-family: "Koodak", arial, sans-serif;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+#content .result .url {
+    font-family: Tahoma, arial, sans-serif;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #4076CE;
+    height: 1.3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 15px;
+    direction: ltr;
+}
+#content .result .summary {
+    font-family: "tahoma", arial, sans-serif;
+    margin-top: 0;
+    color: #555;
+    font-size: 0.9em;
+    height: 4.2em;
+    overflow: hidden;
+    padding-right: 15px;
+    line-height: 1.4em;
+}
+#footer {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    height: 30px;
+}
+#footer-menu {
+    width: 100%;
+    direction: rtl;
+    float: right;
+    background-color: #4D4D8E;
+    margin-top: 20px;
+    padding-right: 107px;
+}
+#footer-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#footer-menu ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+#footer-menu ul li a {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    color: #fff;
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+}
+#footer-menu ul li:hover a {
+    color: #222;
+}
+#footer-menu ul li:hover {
+    transition: background-color 250ms;
+    background-color: #5A5AAD;
+}
+#pagination {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+#page-numbers,
+#next-page,
+#prev-page {
+    display: inline-block;
+}
+#page-numbers span {
+    font-family: Koodak, verdana, arial, sans-serif;
+    font-size: 0.8em;
+    color: #444;
+    display: inline-block;
+    background-color: #ccc;
+    line-height: 43px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+#pagination span:hover {
+    transition: background-color 250ms;
+    background-color: #4D4D8E;
+    color: #fff;
+}
+#pagination .active {
+    background-color: #6767AF;
+    color: #fff;
+}
+#pagination .disabled {
+    color: #999;
+}
+#pagination .pagination-control {
+    font-family: Koodak, verdana, arial, sans-serif;
+    font-size: 0.9em;
+    color: #444;
+    display: inline-block;
+    background-color: #ccc;
+    line-height: 42px;
+    width: 50px;
+    height: 35px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+#pagination .pagination-control span {
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+}
+
+#meta {
+    padding: 20px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 12px;
+    background-color: #f8f8f8;
+}

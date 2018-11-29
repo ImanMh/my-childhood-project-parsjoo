@@ -1,0 +1,21 @@
+{{#each responseHeader}}
+
+    <div id="meta">
+        <div>
+            تعداد پاسخ های نمایش داده شده در هر صفحه:
+            {{params.rows}}
+            پاسخ
+        </div>
+
+        <div>
+            زمان تقریبی پاسخ به درخواست:
+            {{QTime}}
+            میلی ثانیه
+        </div>
+
+        <div>
+            نوع پاسخ دریافت شده:
+            {{params.wt}}
+        </div>
+    </div>
+{{/each}}

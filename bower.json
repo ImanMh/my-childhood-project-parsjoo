@@ -1,0 +1,10 @@
+{
+	"name": "Json Helper",
+	"version": "1.0.0",
+	"dependencies": {
+		"jquery": "latest",
+    	"jsonselect": "https://github.com/lloyd/JSONSelect.git",
+    	"handlebars": "https://github.com/wycats/handlebars.js.git",
+        "urijs": "https://github.com/medialize/URI.js.git"
+	}
+}
